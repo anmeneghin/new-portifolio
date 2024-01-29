@@ -1,1 +1,54 @@
-/* You can add global styles to this file, and also import other style files */
+body,
+.inner {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: url('./assets/vista-superior-do-teclado-rosa-com-azul.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+.btn-right {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+}
+
+.btn-left {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+}
+
+.semi-transparent-button {
+
+  margin: 0 auto;
+  padding: 8px !important;
+  width: 7rem;
+  max-width: 200px;
+  background: #da918a;
+  /* fallback color for old browsers */
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  color: #da918a;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.1s ease-out;
+}
+
+.semi-transparent-button:hover,
+.semi-transparent-button:focus,
+.semi-transparent-button:active {
+  background: #fff;
+  color: #000;
+  transition: all 0.2s ease-in;
+}
+
+.semi-transparent:focus {
+  outline: none;
+}
