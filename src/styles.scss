@@ -2,13 +2,13 @@ body,
 .inner {
   height: 100%;
   width: 100%;
-  position: absolute;
+  position: fixed;
   background: url('./assets/vista-superior-do-teclado-rosa-com-azul.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Comfortaa", sans-serif;
   text-align: center;
 }
 
@@ -25,8 +25,7 @@ body,
 }
 
 .semi-transparent-button {
-
-  margin: 0 auto;
+  margin: 0 2rem;
   padding: 8px !important;
   width: 7rem;
   max-width: 200px;

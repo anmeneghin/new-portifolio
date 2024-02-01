@@ -1,3 +1,78 @@
-:host {
-  display: block;
+.content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  .titulo {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .card {
+    border: none !important;
+    background: #B4E4F7;
+    background: -webkit-linear-gradient(to right, rgb(84 201 252), rgb(196 156 198));
+    background: linear-gradient(to right, rgb(84 201 252), rgb(196 156 198));
+
+    .card-body {
+
+      .about-open,
+      .about-close,
+      .sobre {
+        font-family: Fira Mono, monospace;
+      }
+
+      .sobre {
+        margin-bottom: 0;
+        padding: 0 1.5rem;
+        color: #fff;
+        font-size: 1rem;
+        line-height: 1.75rem;
+        text-align: justify;
+      }
+
+      .about-open,
+      .about-close,
+      .info,
+      .email {
+        color: #ffb2a9;
+      }
+
+      .about-open,
+      .about-close {
+
+        font-weight: 700;
+        text-align: start;
+      }
+
+      .about-open {
+        margin-bottom: 10px;
+      }
+
+      .about-close {
+        margin-top: 10px;
+      }
+
+      .info {
+        b {
+          color: white !important;
+        }
+
+        .email {
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+      }
+    }
+  }
+
 }

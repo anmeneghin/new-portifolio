@@ -21,14 +21,11 @@ $secondary: white;
   transform: translate(-50%, -50%);
 }
 
-// reset
-// * {
-  //   margin: 0;
-  //   box-sizing: border-box;
-  //   padding: 0;
-  //   -webkit-font-smoothing: antialiased;
-  //   -moz-osx-font-smoothing: grayscale;
-  // }
+.btn-right {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+}
 
 .titulo-home,
 p,
