@@ -16,25 +16,37 @@ import { RouterLink } from '@angular/router';
         <div class="card-body">
           <p class="about-open">&lt;about&gt;</p>
           <p class="sobre">
-            Desenvolvedora Front-end há 4 anos. Tenho experiência em Angular e
-            suas aplicações em single-spa, sendo para desevolver novos projetos
-            ou melhorar ainda mais o que foi desenvolvido, pois estou em
-            constante aprendizado. Gosto de trabalhar com estilização de
-            aplicações e aprecio buscar novidades sobre web desing. Tenho
-            experiencia em PHP, refatorando aplicações para otimizar o
-            desempenho de frontend.
+            Front-end developer with experience in Angular and its applications
+            in single SPA, focusing on the creation of new projects and
+            optimizing the applications developed.
+            <!-- Desenvolvedora Front-end com experiência em Angular e suas
+            aplicações em single-spa, com foco na criação de novos projetos e na
+            otimização das aplicações desenvolvidas. -->
+            <br />
+            I also have experience in PHP, refactoring and rewriting
+            applications for optimize frontend performance and user experience.
+            <br />
+            As a resilient, cooperative and productive person, I am in constant
+            learning, I enjoy working with styling applications and I always up
+            to date with news about web design and web development.
+            <!-- Também tenho experiencia em PHP, refatorando e reescrevendo
+            aplicações para otimizar o desempenho do frontend e da experiencia do usuario. <br /> -->
+            <!-- Como uma pessoa resiliente, cooperativa e produtiva, estou em
+            constante aprendizado, gosto de trabalhar com estilização de
+            aplicações e sempre busco estar a par de novidades sobre web desing
+            e desenvolvimento web. -->
           </p>
           <p class="about-close">&lt;/about&gt;</p>
           <hr />
           <div class="info">
-            <b>Idade: </b> 25 anos
+            <b>Age: </b> 25
             <br />
             <b>Email: </b>
             <a class="email" href="mailto:anm3219@gmail.com"
               ><font>anm3219&#64;gmail.com</font></a
             >
             <br />
-            <b>Currículo: </b> <a><i class="fa-solid fa-download"></i></a>
+            <b>Resume: </b> <a><i class="fa-solid fa-download"></i></a>
           </div>
         </div>
       </div>
