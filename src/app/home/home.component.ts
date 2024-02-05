@@ -25,7 +25,7 @@ import { RouterLink } from '@angular/router';
       <div class="card-home">
         <div class="inner">
           <div class="front">
-            <h1 class="titulo-home">Amanda N. Meneghin</h1>
+            <h1 class="titulo-home">Amanda Meneghin</h1>
           </div>
           <div class="back">
             <img src="https://avatars.githubusercontent.com/u/57951450?v=4" />

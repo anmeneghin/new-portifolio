@@ -46,7 +46,10 @@ import { RouterLink } from '@angular/router';
               ><font>anm3219&#64;gmail.com</font></a
             >
             <br />
-            <b>Resume: </b> <a><i class="fa-solid fa-download"></i></a>
+            <b>Resume: </b>
+            <a class="resume" (click)="downloadCV()"
+              ><i class="fa-solid fa-download"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -55,4 +58,15 @@ import { RouterLink } from '@angular/router';
   styleUrl: './about.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AboutComponent {}
+export class AboutComponent {
+  downloadCV() {
+    let link = document.createElement('a');
+
+    link.setAttribute('type', 'hidden');
+    link.href = '/assets/resume_amanda.pdf';
+    link.download = 'resume_amanda.pdf';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  }
+}
