@@ -22,8 +22,8 @@ import { RouterLink } from '@angular/router';
       >Skills <i class="fa-solid fa-angles-right"></i
     ></a>
     <div class="outline">
-      <div class="card-home">
-        <div class="inner">
+      <div class="card-home" (click)="mobileClass = !mobileClass">
+        <div class="inner" [ngClass]="mobileClass ? 'inner-click' : 'new'">
           <div class="front">
             <h1 class="titulo-home">Amanda Meneghin</h1>
           </div>
@@ -38,4 +38,6 @@ import { RouterLink } from '@angular/router';
   styleUrl: './home.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class HomeComponent {}
+export class HomeComponent {
+  mobileClass = false;
+}

@@ -72,7 +72,7 @@ span {
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
-  transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   text-align: center;
   border-radius: 20px;
 
@@ -143,4 +143,29 @@ span {
     background-size: 200% 200%;
   }
 
+}
+
+@media (max-width: 768px) {
+  .inner {
+    background-size: 200% 200%;
+  }
+
+  .inner-click {
+    transform: rotateY(180deg) translateZ(5px);
+    backface-visibility: visible;
+  }
+
+  .card-home {
+    width: 300px;
+    height: 200px;
+  }
+
+  .titulo-home {
+    font-size: 16px;
+  }
+
+  .back img {
+    width: 75px;
+    height: 75px;
+  }
 }
