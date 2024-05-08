@@ -1,15 +1,16 @@
-body,
-.inner {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  background: url('./assets/vista-superior-do-teclado-rosa-com-azul.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-  font-family: "Comfortaa", sans-serif;
-  text-align: center;
+// body {
+
+  //   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/flat-lay-desktop-with-laptop-magnifier.jpg);
+  //   background-size: cover;
+  //   box-shadow: inset 0 0 0 2000px rgba(10, 47, 71, 0.3);
+
+  // }
+
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #545454;
 }
 
 .btn-right {

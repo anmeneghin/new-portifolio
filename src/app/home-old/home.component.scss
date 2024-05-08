@@ -1,0 +1,171 @@
+// sass
+//Var
+//colors
+$base: linear-gradient(to right, #2bc0e4, #eaecc6);
+$primary: #232A3F;
+$accent:#da918a;
+$secondary: white;
+
+//mixins
+@mixin flex() {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@mixin center() {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-right {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+}
+
+.titulo-home,
+p,
+span {
+  margin: 10px 10px 0 0;
+  padding-bottom: 0.714em !important;
+  //padding-top: 0.714em !important
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  color: $accent;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+
+.noselect {
+  user-select: none;
+}
+
+.outline {
+  @include center;
+}
+
+.card-home {
+  background-color: transparent;
+  width: 500px;
+  height: 300px;
+  perspective: 5000px;
+
+
+  &:hover {
+    .inner {
+      transform: rotateY(180deg) translateZ(5px);
+      backface-visibility: visible;
+    }
+  }
+}
+
+.inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  text-align: center;
+  border-radius: 20px;
+
+  &:after {
+    content: "";
+    background: inherit;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    filter: blur(8px);
+  }
+}
+
+
+.front,
+.back {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  padding: 20px;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transform: rotateY(0deg) translateZ(0px);
+}
+
+.front {
+  text-align: center;
+  background-color: rgba(100, 100, 111, 0.2);
+  color: black;
+
+  .titulo-home {
+    color: $secondary !important;
+    text-align: center;
+    @include center;
+  }
+}
+
+.back {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #da918a;
+  transform: rotateY(-180deg);
+
+  .titulo-home {
+    padding-bottom: 0 !important;
+    padding-top: 0.714em !important;
+  }
+
+  p {
+    padding-top: 0 !important;
+  }
+
+  img {
+    top: 10px;
+    position: relative;
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .inner {
+    background-size: 200% 200%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .inner {
+    background-size: 200% 200%;
+  }
+
+  .inner-click {
+    transform: rotateY(180deg) translateZ(5px);
+    backface-visibility: visible;
+  }
+
+  .card-home {
+    width: 300px;
+    height: 200px;
+  }
+
+  .titulo-home {
+    font-size: 16px;
+  }
+
+  .back img {
+    width: 75px;
+    height: 75px;
+  }
+}

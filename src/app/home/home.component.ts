@@ -1,43 +1,25 @@
-import {
-  Component,
-  ElementRef,
-  OnInit,
-  ViewChild,
-  Inject,
-  ChangeDetectionStrategy,
-} from '@angular/core';
-import { CommonModule, DOCUMENT } from '@angular/common';
-import { HttpClient } from '@angular/common/http';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
-import * as Notiflix from 'notiflix';
-import { RouterLink } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { MenuMobileComponent } from '@app/menu-mobile/menu-mobile.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterLink],
-  template: `<a
-      class="semi-transparent-button btn-right"
-      [routerLink]="['/skills']"
-      >Skills <i class="fa-solid fa-angles-right"></i
-    ></a>
-    <div class="outline">
-      <div class="card-home" (click)="mobileClass = !mobileClass">
-        <div class="inner" [ngClass]="mobileClass ? 'inner-click' : 'new'">
-          <div class="front">
-            <h1 class="titulo-home">Amanda Meneghin</h1>
-          </div>
-          <div class="back">
-            <img src="https://avatars.githubusercontent.com/u/57951450?v=4" />
-            <h2 class="titulo-home">Amanda Meneghin</h2>
-            <p>Front-end developer</p>
-          </div>
-        </div>
-      </div>
-    </div>`,
+  imports: [CommonModule, MenuMobileComponent],
+  templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomeComponent {
-  mobileClass = false;
+  openMenuMobile = signal(false);
+  downloadCV() {
+    let link = document.createElement('a');
+
+    link.setAttribute('type', 'hidden');
+    link.href = 'assets/resume_amanda.pdf';
+    link.download = 'resume_amanda.pdf';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  }
 }

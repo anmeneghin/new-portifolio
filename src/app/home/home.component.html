@@ -1,0 +1,226 @@
+<div class="page-wrapper home-1">
+  <div class="bostami-header-area mb-3 z-index-5">
+    <div class="container">
+      <div class="bostami-header-wrap">
+        <div class="row align-items-center">
+          <!-- menu btn -->
+          <div class="col-12">
+            <div class="bostami-header-menu-btn text-right">
+              <a (click)="openMenuMobile.set(!openMenuMobile())"
+                ><div
+                  class="menu-btn toggle_menu"
+                  [ngClass]="openMenuMobile() ? 'active' : ''"
+                >
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <app-menu-mobile [(openMenu)]="openMenuMobile"></app-menu-mobile>
+    </div>
+  </div>
+
+  <!-- header-end -->
+
+  <div class="container z-index-3">
+    <div class="row">
+      <div class="item-info col-xxl-3 col-xl-3">
+        <div class="bostami-parsonal-info-area">
+          <div class="bostami-parsonal-info-wrap">
+            <!-- img -->
+            <div class="bostami-parsonal-info-img">
+              <img src="assets/profile-pic.png" alt="avatar" />
+            </div>
+
+            <!-- name -->
+            <h4 class="bostami-parsonal-info-name">Amanda N. Meneghin</h4>
+            <span class="bostami-parsonal-info-bio mb-15"
+              >Software Developer</span
+            >
+
+            <!-- socail link -->
+            <ul class="bostami-parsonal-info-social-link mb-30">
+              <li>
+                <a href="#" class="facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="twitter">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="linkedin">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+
+            <!-- contact -->
+            <div class="bostami-parsonal-info-contact mb-30">
+              <div class="bostami-parsonal-info-contact-item phone">
+                <div class="icon">
+                  <i class="phone fa-solid fa-mobile-screen-button"></i>
+                </div>
+                <div class="text">
+                  <span>Phone</span>
+                  <p>+123 456 7890</p>
+                </div>
+              </div>
+
+              <div class="bostami-parsonal-info-contact-item email">
+                <div class="icon">
+                  <i class="fa-solid fa-envelope-open-text"></i>
+                </div>
+                <div class="text">
+                  <span>Email</span>
+                  <p>example&#64;mail.com</p>
+                </div>
+              </div>
+
+              <div class="bostami-parsonal-info-contact-item location">
+                <div class="icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="text">
+                  <span>Location</span>
+                  <p>Hong kong china</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- cv button -->
+            <div class="bostami-parsonal-info-btn">
+              <button class="btn btn-primary btn-lg" (click)="downloadCV()">
+                <span class="icon">
+                  <i class="fas fa-solid fa-cloud-arrow-down"></i>
+                </span>
+                Download CV
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item col-xxl-8 col-xl-9">
+        <div class="bostami-page-content-wrap">
+          <!-- page title -->
+          <div class="section-wrapper pl-60 pr-60 pt-60">
+            <div class="bostami-page-title-wrap mb-35">
+              <h3 class="page-title">Sobre</h3>
+              <p>
+                I'm Creative Director and UI/UX Designer from Sydney, Australia,
+                working in web development and print media. I enjoy turning
+                complex problems into simple, beautiful and intuitive designs.
+              </p>
+              <p>
+                My aim is to bring across your message and identity in the most
+                creative way. I created web design for many famous brand
+                companies.
+              </p>
+            </div>
+          </div>
+
+          <!-- what-do -->
+          <div class="section-wrapper mb-30">
+            <div class="bostami-section-title-wrap mb-30">
+              <h3 class="section-title">Habilidades</h3>
+            </div>
+
+            <div class="skills">
+              <div class="skills-card">
+                <div class="icon">
+                  <i class="fa-brands fa-html5"></i>
+                </div>
+                <div class="text">
+                  <h4 class="title">Front-end</h4>
+                  <div class="skills-itens">
+                    <span class="bg-dark-subtle p-2 rounded">Angular 17+</span
+                    ><span class="bg-dark-subtle p-2 rounded">Single SPA</span>
+                    <span class="bg-dark-subtle p-2 rounded">Scss</span
+                    ><span class="bg-dark-subtle p-2 rounded">Bootstrap</span
+                    ><span class="bg-dark-subtle p-2 rounded">Flexbox</span>
+                    <span class="bg-dark-subtle p-2 rounded">Grid layout</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skills-card">
+                <div class="icon">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="text">
+                  <h4 class="title">Linguagens</h4>
+                  <div class="skills-itens">
+                    <span class="bg-dark-subtle p-2 rounded">Javascript</span
+                    ><span class="bg-dark-subtle p-2 rounded">Typescript</span
+                    ><span class="bg-dark-subtle p-2 rounded">PHP</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skills-card">
+                <div class="icon">
+                  <i class="fa-solid fa-cubes"></i>
+                </div>
+                <div class="text">
+                  <h4 class="title">Databases</h4>
+                  <div class="skills-itens">
+                    <span class="bg-dark-subtle p-2 rounded">Oracle</span
+                    ><span class="bg-dark-subtle p-2 rounded">MySQL</span>
+                  </div>
+                </div>
+              </div>
+              <div class="skills-card">
+                <div class="icon">
+                  <i class="fa-brands fa-docker"></i>
+                </div>
+                <div class="text">
+                  <h4 class="title">Others</h4>
+                  <div class="skills-itens">
+                    <span class="bg-dark-subtle p-2 rounded">Linux</span
+                    ><span class="bg-dark-subtle p-2 rounded">Docker</span>
+                    <span class="bg-dark-subtle p-2 rounded">Git</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item col-xxl-1 d-xxl-block d-none">
+        <div class="bostami-main-menu-wrap">
+          <nav
+            class="bastami-main-menu d-flex flex-column"
+            style="display: block"
+          >
+            <ul class="p-0">
+              <li>
+                <a href="index.html" class="d-flex flex-column">
+                  <i class="fs-4 mb-2 fa-regular fa-address-card"></i>
+                  <span> Sobre </span>
+                </a>
+              </li>
+              <li>
+                <a href="portfolio.html">
+                  <span>
+                    <i class="fa-solid fa-briefcase"></i>
+                  </span>
+                  Projetos
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

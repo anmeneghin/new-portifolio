@@ -1,0 +1,36 @@
+<div class="mobile-menu-wrap">
+  <div
+    class="mobile-menu mobile_menu mean-container shadow rounded-4"
+    [ngClass]="openMenu() ? 'active' : ''"
+  >
+    <div class="mean-bar">
+      <a
+        href="#nav"
+        class="meanmenu-reveal"
+        style="right: 0px; left: auto; display: inline"
+        ><span
+          ><span><span></span></span></span
+      ></a>
+      <nav class="mean-nav rounded-4">
+        <ul style="display: none">
+          <li class="active">
+            <a href="index.html">
+              <span>
+                <i class="fa-regular fa-address-card"></i>
+              </span>
+              Sobre
+            </a>
+          </li>
+          <li>
+            <a href="portfolio.html">
+              <span>
+                <i class="fa-solid fa-briefcase"></i>
+              </span>
+              Projeto
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
