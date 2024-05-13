@@ -1,81 +1,81 @@
-.content {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.bostami-page-content-wrap {
+  background-color: #ffff;
+  border-radius: 20px;
+  height: 100%;
 
-  .titulo {
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-weight: 400;
-    color: white;
-    font-weight: bold;
-    text-align: center;
-  }
+  .section-wrapper {
+    padding: 30px 35px;
 
-  .card {
-    border: none !important;
-    background: #B4E4F7;
-    background: -webkit-linear-gradient(to right, rgb(84 201 252), rgb(196 156 198));
-    background: linear-gradient(to right, rgb(84 201 252), rgb(196 156 198));
-
-    .card-body {
-
-      .about-open,
-      .about-close,
-      .sobre {
-        font-family: Fira Mono, monospace;
+    .bostami-page-title-wrap {
+      .page-title {
+        position: relative;
+        display: inline-block;
+        font-weight: 500;
       }
 
-      .sobre {
-        margin-bottom: 0;
-        padding: 0 1.5rem;
-        color: #fff;
-        font-size: 1rem;
-        line-height: 1.75rem;
+      .page-title::after {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 3px;
+        background-color: #e93b81;
+        left: 122%;
+        top: 50%;
+        transform: translatey(-50%);
+        border-radius: 5px;
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-weight: 400;
         text-align: justify;
+        line-height: 27px;
+        color: #44566c;
       }
 
-      .about-open,
-      .about-close,
-      .info,
-      .email,
-      .resume {
-        color: #ff409f;
+
+    }
+
+    .bostami-section-title-wrap {
+      .section-title {
+        margin-bottom: 0;
+        font-weight: 500;
       }
+    }
 
-      .about-open,
-      .about-close {
+    .skills {
+      display: grid;
+      grid-gap: 1rem;
+      grid-template-columns: repeat(2, 1fr);
 
-        font-weight: 700;
-        text-align: start;
-      }
+      .skills-card {
+        border-radius: 12px;
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px;
+        padding-bottom: 15px;
+        background-color: #f1e3e9;
 
-      .about-open {
-        margin-bottom: 10px;
-      }
-
-      .about-close {
-        margin-top: 10px;
-      }
-
-      .info {
-        b {
-          color: white !important;
+        .icon {
+          font-size: 35px;
+          display: flex;
+          align-items: flex-start;
         }
 
-        .email,
-        .resume {
-          text-decoration: none;
+        .text {
+          .skills-itens {
+            display: grid;
+            grid-gap: .5rem;
+            grid-template-columns: repeat(2, 1fr);
+            font-size: 0.813rem;
 
-          &:hover {
-            cursor: pointer;
-            text-decoration: underline;
+            .item {
+              background-color: #e93b8152 !important;
+            }
           }
         }
-
       }
     }
   }
-
 }

@@ -1,3 +1,13 @@
+.btn-primary {
+  background-color: #E93B81;
+  border-color: #E93B81;
+
+  &:hover {
+    background-color: #bb2b65;
+    border-color: #bb2b65;
+  }
+}
+
 .page-wrapper {
   height: 100vh;
   width: 100vw;
@@ -138,18 +148,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 }
 
-.page-title::after {
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 3px;
-  background-color: #1b74e4;
-  left: 122%;
-  top: 50%;
-  transform: translatey(-50%);
-  border-radius: 5px;
-  margin-bottom: 30px;
-}
+
 
 .bostami-parsonal-info-contact-item:not(:first-child) {
   border-top: 1px solid #e3e3e3;
@@ -179,14 +178,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
   }
 }
 
-.skills-itens {
-  display: grid;
-  grid-gap: .5rem;
-  grid-template-columns: repeat(2, 1fr);
-  font-size: 0.813rem;
 
-
-}
 
 
 
@@ -203,27 +195,9 @@ only screen and (min-width: 768px) and (max-width: 991px),
   }
 }
 
-.skills {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(2, 1fr);
-}
 
-.skills-card {
-  border-radius: 12px;
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 20px;
-  padding-bottom: 15px;
-  background-color: #eef5fa;
 
-  .icon {
-    font-size: 35px;
-    display: flex;
-    align-items: flex-start;
-  }
-}
+
 
 .mb-15 {
   margin-bottom: 15px;
@@ -234,7 +208,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 .bostami-parsonal-info-bio {
-  font-size: 14px;
+  font-size: 16px;
   display: inline-block;
   font-weight: 500;
   text-transform: capitalize;
@@ -266,23 +240,24 @@ only screen and (min-width: 768px) and (max-width: 991px),
   background-color: #f3f6f6;
   text-align: center;
   line-height: 40px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
-.bostami-parsonal-info-social-link .twitter {
-  color: #1c9cea;
-}
+.bostami-parsonal-info-social-link .github {
+  color: #44566c;
 
-.bostami-parsonal-info-social-link .facebook {
-  color: #1773ea;
-}
-
-.bostami-parsonal-info-social-link .instagram {
-  color: #e12a72;
+  &:hover {
+    color: #6348a7;
+  }
 }
 
 .bostami-parsonal-info-social-link .linkedin {
-  color: #144679;
+  color: #44566c;
+
+  &:hover {
+    color: #55a8f9;
+    text-decoration: underline;
+  }
 }
 
 .bostami-parsonal-info-contact {
@@ -301,8 +276,8 @@ only screen and (min-width: 768px) and (max-width: 991px),
     .icon {
       flex: 0 0 auto;
       display: inline-block;
-      width: 44px;
-      height: 44px;
+      width: 40px;
+      height: 40px;
       background-color: #ffff;
       border-radius: 8px;
       text-align: center;
@@ -312,27 +287,32 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
       i {
         font-size: 22px;
-      }
-
-      .phone {
         color: #e93b81;
-      }
-
-      .email {
-        color: #6ab5b9;
-      }
-
-      .location {
-        color: #fd7590;
-      }
-
-      .calendar {
-        color: #c17ceb;
       }
     }
 
     .text {
-      display: inline-block;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      .titulo {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .email,
+  .phone,
+  .location {
+    a {
+      color: #44566c;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+        color: #e93b81;
+      }
     }
   }
 }
@@ -353,35 +333,14 @@ only screen and (min-width: 768px) and (max-width: 991px),
   margin-bottom: 35px;
 }
 
-.bostami-page-content-wrap {
-  background-color: #ffff;
-  border-radius: 20px;
-  height: 100%;
-}
 
-.page-title {
-  position: relative;
-  display: inline-block;
-  font-weight: 500;
-}
 
-.bostami-page-title-wrap p {
-  max-width: 632px;
-  font-family: "Poppins",
-    sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 27px;
-  color: #44566c;
-}
 
-.section-title {
-  margin-bottom: 0;
-  font-weight: 500;
-}
+
+
+
 
 .bostami-main-menu-wrap {
-  width: 144px;
   background: white;
   border-radius: 16px;
   padding: 30px;
@@ -416,8 +375,10 @@ only screen and (min-width: 768px) and (max-width: 991px),
   font-weight: 500;
   line-height: 1;
   color: #44566c;
-}
+  text-decoration: none;
 
-.section-wrapper {
-  padding: 30px 35px;
+  &:hover {
+    text-decoration: underline;
+    color: #e93b81;
+  }
 }

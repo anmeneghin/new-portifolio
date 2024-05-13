@@ -1,11 +1,18 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
+import { AboutComponent } from '@app/about/about.component';
 import { MenuMobileComponent } from '@app/menu-mobile/menu-mobile.component';
+import { ProjectsComponent } from '@app/projects/projects.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, MenuMobileComponent],
+  imports: [
+    CommonModule,
+    MenuMobileComponent,
+    AboutComponent,
+    ProjectsComponent,
+  ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
