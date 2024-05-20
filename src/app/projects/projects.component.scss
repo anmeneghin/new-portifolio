@@ -1,3 +1,78 @@
-:host {
-  display: block;
+.cards-projetos {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.section-wrapper {
+  padding: 30px 35px;
+
+  .bostami-page-title-wrap {
+    .page-title {
+      position: relative;
+      display: inline-block;
+      font-weight: 500;
+    }
+
+    .page-title::after {
+      content: "";
+      position: absolute;
+      width: 200px;
+      height: 3px;
+      background-color: #e93b81;
+      left: 122%;
+      top: 50%;
+      transform: translatey(-50%);
+      border-radius: 5px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-weight: 400;
+      text-align: justify;
+      line-height: 27px;
+      color: #44566c;
+    }
+  }
+
+  .bostami-section-title-wrap {
+    .section-title {
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+  }
+
+  .skills {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    .skills-card {
+      border-radius: 12px;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      padding: 20px;
+      padding-bottom: 15px;
+      background-color: #f1e3e9;
+
+      .icon {
+        font-size: 35px;
+        display: flex;
+        align-items: flex-start;
+      }
+
+      .text {
+        .skills-itens {
+          display: grid;
+          grid-gap: 0.5rem;
+          grid-template-columns: repeat(2, 1fr);
+          font-size: 0.813rem;
+
+          .item {
+            background-color: #e93b8152 !important;
+          }
+        }
+      }
+    }
+  }
 }

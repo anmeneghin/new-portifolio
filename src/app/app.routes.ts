@@ -3,25 +3,21 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'about',
     pathMatch: 'full',
-  },
-  {
-    path: 'home',
-    loadComponent: () =>
-      import('@app/home/home.component').then((mod) => mod.HomeComponent),
-    data: { animation: 'HomePage' },
-  },
-  {
-    path: 'skills',
-    loadComponent: () =>
-      import('@app/skills/skills.component').then((mod) => mod.SkillsComponent),
-    data: { animation: 'SkillsPage' },
   },
   {
     path: 'about',
     loadComponent: () =>
       import('@app/about/about.component').then((mod) => mod.AboutComponent),
     data: { animation: 'AboutPage' },
+  },
+  {
+    path: 'projects',
+    loadComponent: () =>
+      import('@app/projects/projects.component').then(
+        (mod) => mod.ProjectsComponent
+      ),
+    data: { animation: 'ProjectsPage' },
   },
 ];

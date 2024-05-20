@@ -14,6 +14,7 @@ import {
   withInterceptorsFromDi,
 } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -27,6 +28,6 @@ export const appConfig: ApplicationConfig = {
     DatePipe,
     provideHttpClient(withInterceptorsFromDi()),
     provideRouter(routes),
-    provideClientHydration(),
+    provideClientHydration(), provideAnimationsAsync(),
   ],
 };

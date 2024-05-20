@@ -1,1 +1,44 @@
-<p>projects works!</p>,
+<div class="section-wrapper pb-3">
+  <div class="bostami-page-title-wrap">
+    <h1 class="page-title">Projetos</h1>
+    <div>
+      @defer ( when projetos().length>0) {
+      <div class="cards-projetos mb-4">
+        @for (projeto of projetos()| slice: (pageIndex * pageSize):(pageIndex *
+        pageSize + pageSize); track $index) {
+        <div class="card" style="width: auto">
+          <img src="{{ projeto.imagemPath }}" class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title">{{ projeto.nome }}</h5>
+            <p class="card-text">
+              {{ projeto.descricao }}
+            </p>
+            <a
+              href="{{ projeto.linkGitHub }}"
+              target="”_blank”"
+              class="btn btn-primary"
+            >
+              <i class="fa-brands fa-github-alt"></i>
+              <span class="ps-2">Github</span></a
+            >
+          </div>
+        </div>
+        }
+      </div>
+      }
+      <mat-paginator
+        #paginator
+        class="demo-paginator"
+        (page)="handlePageEvent($event)"
+        [length]="length"
+        [pageSize]="pageSize"
+        [disabled]="disabled"
+        [showFirstLastButtons]="showFirstLastButtons"
+        [pageSizeOptions]="showPageSizeOptions ? pageSizeOptions : []"
+        [hidePageSize]="hidePageSize"
+        [pageIndex]="pageIndex"
+      >
+      </mat-paginator>
+    </div>
+  </div>
+</div>
