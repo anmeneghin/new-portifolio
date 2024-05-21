@@ -27,38 +27,30 @@ export class ProjectsComponent {
     },
     {
       id: '2',
-      nome: '2Community IoT Device Aplicação',
-      descricao: 'Projeto Gerenciamento de Dispositivos IoT',
-      imagemPath: '/assets/projetos/iot.png',
-      linkGitHub: 'https://github.com/anmeneghin/gerencimento-dispositivos-iot',
+      nome: 'EBOOK Gerado por I.A.s',
+      descricao:
+        'Projeto com o objetivo de gerar um ebook digital com as facilidades das ferramentas de IA. ',
+      imagemPath: '/assets/projetos/ebook-ia.png',
+      linkGitHub:
+        'https://github.com/anmeneghin/prompts-recipe-to-create-a-ebook',
     },
     {
       id: '3',
-      nome: '3Community IoT Device Aplicação',
-      descricao: 'Projeto Gerenciamento de Dispositivos IoT',
-      imagemPath: '/assets/projetos/iot.png',
-      linkGitHub: 'https://github.com/anmeneghin/gerencimento-dispositivos-iot',
+      nome: 'Artigo técnico gerado por I.A.s',
+      descricao:
+        'Projeto com o objetivo de gerar um artigo técnico com um layout rico, leitura agradável e com foco em promover sua autoridade técnica.',
+      imagemPath: '/assets/projetos/artigo.png',
+      linkGitHub:
+        'https://github.com/anmeneghin/prompts-for-article-generate-by-ia',
     },
     {
       id: '4',
-      nome: '4Community IoT Device Aplicação',
-      descricao: 'Projeto Gerenciamento de Dispositivos IoT',
-      imagemPath: '/assets/projetos/iot.png',
-      linkGitHub: 'https://github.com/anmeneghin/gerencimento-dispositivos-iot',
-    },
-    {
-      id: '5',
-      nome: '5Community IoT Device Aplicação',
-      descricao: 'Projeto Gerenciamento de Dispositivos IoT',
-      imagemPath: '/assets/projetos/iot.png',
-      linkGitHub: 'https://github.com/anmeneghin/gerencimento-dispositivos-iot',
-    },
-    {
-      id: '6',
-      nome: '6Community IoT Device Aplicação',
-      descricao: 'Projeto Gerenciamento de Dispositivos IoT',
-      imagemPath: '/assets/projetos/iot.png',
-      linkGitHub: 'https://github.com/anmeneghin/gerencimento-dispositivos-iot',
+      nome: 'Podcast Gerado por I.A.s',
+      descricao:
+        'Projeto com o objetivo de gerar um podcast utilizando ferramentas de IA através de prompts mais trabalhado.',
+      imagemPath: '/assets/projetos/podcast.jpeg',
+      linkGitHub:
+        'https://github.com/anmeneghin/prompts-for-podcast-generate-by-ia',
     },
   ]);
 

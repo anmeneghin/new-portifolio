@@ -27,8 +27,6 @@
       line-height: 27px;
       color: #44566c;
     }
-
-
   }
 
   .bostami-section-title-wrap {
@@ -61,7 +59,7 @@
       .text {
         .skills-itens {
           display: grid;
-          grid-gap: .5rem;
+          grid-gap: 0.5rem;
           grid-template-columns: repeat(2, 1fr);
           font-size: 0.813rem;
 
@@ -71,5 +69,11 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 1400px) {
+  .skills {
+    grid-template-columns: repeat(1, 1fr) !important;
   }
 }

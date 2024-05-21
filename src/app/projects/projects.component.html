@@ -6,21 +6,26 @@
       <div class="cards-projetos mb-4">
         @for (projeto of projetos()| slice: (pageIndex * pageSize):(pageIndex *
         pageSize + pageSize); track $index) {
-        <div class="card" style="width: auto">
-          <img src="{{ projeto.imagemPath }}" class="card-img-top" />
+        <div class="card rounded-4 shadow border-0" style="width: auto">
+          <div class="imagem rounded-top-4">
+            <img src="{{ projeto.imagemPath }}" class="card-img-top" />
+          </div>
+
           <div class="card-body">
-            <h5 class="card-title">{{ projeto.nome }}</h5>
+            <h4 class="card-title">{{ projeto.nome }}</h4>
             <p class="card-text">
               {{ projeto.descricao }}
             </p>
+          </div>
+          <div class="card-footer border-0">
             <a
               href="{{ projeto.linkGitHub }}"
               target="”_blank”"
               class="btn btn-primary"
             >
               <i class="fa-brands fa-github-alt"></i>
-              <span class="ps-2">Github</span></a
-            >
+              <span class="ps-2">Github</span>
+            </a>
           </div>
         </div>
         }
