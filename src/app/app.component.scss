@@ -1,63 +1,25 @@
-.bostami-page-content-wrap {
-  background-color: #ffff;
-  border-radius: 20px;
-  height: 100%;
-}
-
-.conteudo {
-  app-navbar {
-    position: absolute;
-    z-index: 10;
-  }
-}
-
 .background {
-  width: 100%;
-  height: 100%;
   background: url("../assets/flat-lay-desktop-with-laptop-magnifier.jpg");
   background-size: cover;
-  position: absolute;
   .overlay {
-    width: 100%;
-    height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     .page-wrapper {
-      height: 100vh;
-      width: 100vw;
-      display: block;
       background-position: center center;
       background-size: cover;
-      position: fixed;
-      overflow-x: hidden;
-      overflow-y: auto;
       padding-bottom: 120px;
 
-      .bostami-header-wrap {
+      .header-wrap {
         padding: 20px;
-        border-radius: 12px;
-        .bostami-header-menu-btn {
-          display: flex;
-          align-items: center;
-          justify-content: end;
+        .header-menu-btn {
           .menu-btn {
             background: #e93b81;
             width: 40px;
             height: 40px;
-            position: relative;
-            display: inline-flex;
-            border-radius: 50%;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
             cursor: pointer;
             transition: 1s;
-            overflow: hidden;
             span {
-              position: absolute;
               width: 12px;
               height: 2px;
-              background-color: #ffff;
-              border-radius: 2px;
               transition: 0.5s;
               &:nth-child(1) {
                 transform: translateY(-5px);
@@ -87,36 +49,22 @@
           }
         }
       }
-      .mobile-menu-wrap {
-        position: relative;
-      }
-      .bostami-parsonal-info-area {
-        width: 100%;
-        border-radius: 20px;
-        background-color: white;
-        text-align: center;
+
+      .parsonal-info-area {
         padding: 30px 35px;
 
-        .bostami-parsonal-info-img {
+        .parsonal-info-img {
           width: 200px;
           height: 200px;
-          border-radius: 20px;
-          overflow: hidden;
-          margin: auto;
-          margin-bottom: 21px;
-
           img {
-            width: 100%;
-            height: 100%;
             object-fit: cover;
           }
         }
 
-        .bostami-parsonal-info-name {
+        .parsonal-info-name {
           font-size: 26px;
           text-transform: capitalize;
           font-weight: 500;
-          color: black;
           margin-bottom: 8px;
 
           a {
@@ -124,33 +72,21 @@
             text-decoration: none;
           }
         }
-        .bostami-parsonal-info-bio {
-          font-size: 16px;
-          display: inline-block;
+        .parsonal-info-bio {
           font-weight: 500;
           text-transform: capitalize;
-          color: #000;
           font-family: "Poppins", sans-serif;
           background-color: #f3f6f6;
-          border-radius: 5px;
           padding: 4px 20px;
         }
 
-        .bostami-parsonal-info-social-link {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 0;
+        .parsonal-info-social-link {
           li {
-            display: inline-block;
             margin: 0 4px;
             a {
-              display: inline-block;
               width: 40px;
               height: 40px;
-              border-radius: 8px;
               background-color: #f3f6f6;
-              text-align: center;
               line-height: 40px;
               font-size: 20px;
               &.github {
@@ -172,27 +108,19 @@
           }
         }
 
-        .bostami-parsonal-info-contact {
+        .parsonal-info-contact {
           background-color: #f3f6f6;
-          border-radius: 16px;
-          text-align: left;
           padding: 10px 20px;
 
-          .bostami-parsonal-info-contact-item {
-            display: flex;
-            align-items: center;
+          .parsonal-info-contact-item {
             gap: 10px;
             padding-top: 10px;
             padding-bottom: 10px;
 
             .icon {
               flex: 0 0 auto;
-              display: inline-block;
               width: 40px;
               height: 40px;
-              background-color: #ffff;
-              border-radius: 8px;
-              text-align: center;
               line-height: 44px;
               box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
               transition: 0.3s;
@@ -204,10 +132,6 @@
             }
 
             .text {
-              display: flex;
-              flex-direction: column;
-              justify-content: flex-start;
-
               .titulo {
                 font-size: 12px;
               }
@@ -229,23 +153,16 @@
           }
         }
       }
-      .bostami-main-menu-wrap {
-        background: white;
-        border-radius: 16px;
+      .main-menu-wrap {
         padding: 30px;
         position: sticky;
         top: -45px;
-        .bastami-main-menu {
+        .main-menu {
           ul {
             li {
               background-color: #f3f6f6;
-              border-radius: 12px;
               width: 84px;
               height: 84px;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              text-align: center;
               transition: 0.3s;
               &:is(.active) {
                 background-color: #e93b81;
@@ -254,7 +171,6 @@
                 margin-bottom: 20px;
               }
               a {
-                display: block;
                 font-size: 13px;
                 text-transform: capitalize;
                 font-weight: 500;
@@ -277,15 +193,15 @@
 
 @media (max-width: 1400px) {
   .home-1 {
-    .bostami-header-area {
+    .header-area {
       margin-bottom: 50px;
-      .bostami-header-wrap {
+      .header-wrap {
         margin-left: 0px;
         margin-right: 0px;
       }
     }
 
-    .bostami-parsonal-info-area {
+    .parsonal-info-area {
       width: 100%;
       margin-left: 0px;
       margin-bottom: 30px;
