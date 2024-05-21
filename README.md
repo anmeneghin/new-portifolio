@@ -8,6 +8,8 @@
 
 Olá! meu nome é Amanda Nogueira Meneghin, sou desenvolvedora de software graduada em Análise e Desenvolvimento de Sistemas e com pós em Desenvolvimento Frontend. Apaixonada por frontend, aprecio trabalhar com estilização e criação de aplicações.
 
+Confira meu site portifólio [aqui!](https://anmeneghin.github.io/new-portifolio/about)
+
 <br>
 
 ## Habilidades
