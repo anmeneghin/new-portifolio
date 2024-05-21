@@ -30,7 +30,7 @@ export class ProjectsComponent {
       nome: 'EBOOK Gerado por I.A.s',
       descricao:
         'Projeto com o objetivo de gerar um ebook digital com as facilidades das ferramentas de IA. ',
-      imagemPath: 'assets/projetos/ebook-ia.png',
+      imagemPath: './assets/projetos/ebook-ia.png',
       linkGitHub:
         'https://github.com/anmeneghin/prompts-recipe-to-create-a-ebook',
     },
@@ -39,7 +39,7 @@ export class ProjectsComponent {
       nome: 'Artigo técnico gerado por I.A.s',
       descricao:
         'Projeto com o objetivo de gerar um artigo técnico com um layout rico, leitura agradável e com foco em promover sua autoridade técnica.',
-      imagemPath: 'assets/projetos/artigo.png',
+      imagemPath: './assets/projetos/artigo.png',
       linkGitHub:
         'https://github.com/anmeneghin/prompts-for-article-generate-by-ia',
     },
@@ -48,7 +48,7 @@ export class ProjectsComponent {
       nome: 'Podcast Gerado por I.A.s',
       descricao:
         'Projeto com o objetivo de gerar um podcast utilizando ferramentas de IA através de prompts mais trabalhado.',
-      imagemPath: 'assets/projetos/podcast.jpeg',
+      imagemPath: './assets/projetos/podcast.jpeg',
       linkGitHub:
         'https://github.com/anmeneghin/prompts-for-podcast-generate-by-ia',
     },
