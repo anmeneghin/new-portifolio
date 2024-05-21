@@ -17,7 +17,7 @@
   transform: scaleY(1) !important;
 }
 
-.mean-container .mean-nav>ul {
+.mean-container .mean-nav > ul {
   display: block !important;
 }
 
@@ -70,28 +70,6 @@
   width: 100%;
 }
 
-.mean-nav ul li:is(.active) a {
-  color: #1b74e4;
-}
-
-.mean-nav ul li a {
-  border: none;
-  font-size: 13px;
-  text-transform: capitalize;
-  font-weight: 500;
-  color: #44566c;
-  padding: 5px 70px;
-}
-
-.mobile-menu-wrap .mobile-menu .mean-bar .mean-nav ul li a {
-  border: none;
-  font-size: 13px;
-  text-transform: capitalize;
-  font-weight: 500;
-  color: #44566c;
-  padding: 5px 70px;
-}
-
 .mean-container .mean-nav ul li a {
   border-top: 1px solid #fff;
   color: #fff;
@@ -124,8 +102,8 @@
   width: 100%;
 }
 
-.mobile-menu-wrap .mobile-menu .mean-bar .mean-nav ul li:is(.active) a {
-  color: #1b74e4;
+.active {
+  color: #e93b81 !important;
 }
 
 .mobile-menu-wrap .mobile-menu .mean-bar .mean-nav ul li a span {
@@ -134,7 +112,7 @@
 
 .mobile-menu-wrap .mobile-menu .mean-bar .mean-nav ul li a {
   border: none;
-  font-size: 13px;
+  font-size: 16px;
   text-transform: capitalize;
   font-weight: 500;
   color: #44566c;

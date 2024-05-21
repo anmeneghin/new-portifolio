@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import {
   ChildrenOutletContexts,
   RouterLink,
+  RouterLinkActive,
   RouterOutlet,
 } from '@angular/router';
 import { slideInAnimation } from './animation';
@@ -20,6 +21,7 @@ import { ProjectsComponent } from './projects/projects.component';
     AboutComponent,
     ProjectsComponent,
     RouterLink,
+    RouterLinkActive,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

@@ -182,6 +182,9 @@
                   text-decoration: underline;
                   color: #e93b81;
                 }
+                &.active {
+                  color: #e93b81 !important;
+                }
               }
             }
           }

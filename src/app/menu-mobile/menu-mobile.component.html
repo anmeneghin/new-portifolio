@@ -13,8 +13,8 @@
       ></a>
       <nav class="mean-nav rounded-4">
         <ul style="display: none">
-          <li class="active p-2">
-            <a href="index.html">
+          <li class="p-2">
+            <a [routerLink]="['/about']" routerLinkActive="active">
               <span>
                 <i class="fa-regular fa-address-card"></i>
               </span>
@@ -22,11 +22,11 @@
             </a>
           </li>
           <li class="px-2 pb-2">
-            <a [routerLink]="['/projetos']">
+            <a [routerLink]="['/projects']" routerLinkActive="active">
               <span>
                 <i class="fa-solid fa-briefcase"></i>
               </span>
-              Projeto
+              Projetos
             </a>
           </li>
         </ul>
